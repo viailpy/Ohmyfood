@@ -10,6 +10,10 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+main {
+  padding: 0 1rem;
+}
+
 header {
   display: flex;
   font-family: "shrikhand";
@@ -20,7 +24,7 @@ header {
   position: relative;
 }
 
-main .recherche {
+.recherche {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,25 +32,20 @@ main .recherche {
   background-color: #f3f3f3;
   padding: 0.5rem;
 }
-
-main .recherche i {
+.recherche i {
   font-size: 1.5rem;
 }
 
-/*explore*/
 .explore {
   text-align: center;
 }
-
 .explore h2 {
   margin-top: 2rem;
   font-size: 2rem;
 }
-
 .explore p {
   font-size: 1rem;
 }
-
 .explore button {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
@@ -54,12 +53,33 @@ main .recherche i {
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: 5px 5px 5px lightgray;
   transition: all 200ms;
+  box-shadow: 2px 1px 8px #000000;
 }
-
 .explore button:hover {
   transform: scale(1.03);
+}
+
+.fonction ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .fonction ol {
+    flex-direction: column;
+  }
+}
+.fonction li {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px #000000;
+}
+.fonction li:hover {
+  transform: scale(1.03);
+  /*include lighten a ajouter voir color dans mixin lighten*/
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,3 @@
+@mixin lighten ($color){
+    color: lighten($color: $color, $amount: 20%);
+}
