@@ -15,13 +15,28 @@
 
 body {
     margin: 0;
+    font-family: "roboto",sans-serif;
 }
 
 header {
+    display: flex;
     font-family: "shrikhand";
-    text-align: center;
+    justify-content: center;
     box-shadow: 0 0 0.5rem rgb(0 0 0/30%);
     padding: 0.3rem;
+    margin: 0;
+    position: relative;
 }
 
+main .recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f3f3f3;
+    padding: 0.5rem;
+}
+main .city i {
+    font-size: 1.5rem;
+}
 
