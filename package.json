@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood2",
+  "version": "1.0.0",
+  "description": "projet 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "viailpy",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
