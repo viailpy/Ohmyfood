@@ -1,4 +1,5 @@
-@import "../utils/zoom";
+@use "../utils/zoom";
+@use "../utils/boxshadow";
 
 .fonction {
     & ol {
@@ -14,9 +15,9 @@
     padding: 1rem 2rem;
     flex-grow: 1;
     border-radius: 1rem;
-    @include base-shadow;
+    @include boxshadow.base-shadow;
     &:hover {
-        @include zoom;
+        @include zoom.zoom;
         /*include lighten a ajouter voir color dans mixin lighten*/
     }
 

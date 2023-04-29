@@ -82,4 +82,8 @@ header {
   /*include lighten a ajouter voir color dans mixin lighten*/
 }
 
+/*@mixin lighten ($color){
+    color: lighten($color: $color, $amount: 20%);
+}*/
+
 /*# sourceMappingURL=style.css.map */

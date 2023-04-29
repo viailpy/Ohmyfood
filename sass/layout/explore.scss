@@ -1,4 +1,4 @@
-@import "../utils/boxshadow";
+@use "../utils/boxshadow";
 
 
 .explore {
@@ -21,7 +21,7 @@
     border: none;
     border-radius: 2rem;
     transition: all 200ms;
-    @include base-shadow;
+    @include boxshadow.base-shadow;
     
 
 }
