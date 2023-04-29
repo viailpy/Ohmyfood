@@ -5,17 +5,18 @@
 
 .menus {
     background-color: #f6f6f6;
-    padding: 1rem 2rem ;
-    margin: 2rem 0;
+    padding: 2rem 2rem 0 2rem ;
+    margin: 3rem 0 8rem 0;
+    
     
     
     &__cards {
         display: grid; 
         grid-template-columns: 1fr 1fr;
-        gap:2rem;
+        gap:5rem;
        
-        border-radius: 1rem;
-        @media (max-width:1000px){
+        
+        @media (max-width:800px){
             grid-template-columns: 1fr;
             
         }
@@ -44,15 +45,16 @@
         
         height: 4rem;
         flex-grow: 1;
-        min-width: 30rem;
+        min-width: 20rem;
         height: 15rem;
         gap: 1rem;
         
-        & .card__image {
-           background-position: center;
+        &__image {
+            background-position: left 50% top 75%;
             background-size: cover;
-            height: 15rem;
+            height: 14rem;
             border-radius: 1rem 1rem 0 0;  
+            
         }
         &__image-1 {
             background-image: url(../../asset/images/restaurants/resto1.jpg);
@@ -67,18 +69,45 @@
             background-image: url(../../asset/images/restaurants/resto4.jpg);
         }
         &__description {
+            position: relative;
             
             h3 {
              padding:  0.5rem 1rem ;
             }
             p {
-                padding: 0 1rem;
+                padding: 0 0 1rem 1rem   
             }
-            border-radius: 0 0 1rem 1rem;
-            
+            i {
+                position: absolute;
+                right: 2rem;
+                top: 50%;
+                font-size: 2rem;
+            }
+                
        
      }
 
+     .fas {
+        z-index:3;
+        opacity:0;
+        transition: opacity 0.5s ease-in-out;
+        color: colors.$main-color;
+        
+        
+        &:hover {
+         opacity: 1;
+         
+         }
+         &:not(:hover) {
+             opacity: 0;
+         }
+        }
     
+     .card-box {
+        
+        border-radius: 1rem;
+        @include boxshadow.base-shadow;
+       
+     }
     }
 }

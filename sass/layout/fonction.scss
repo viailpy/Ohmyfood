@@ -13,10 +13,10 @@
         text-align: center;
         counter-reset: numbers;
         display: flex;
-        padding:  0 2rem ;
+        padding:  0 1.5rem ;
         
         gap: 2rem;
-        @media (max-width: 1000px){
+        @media (max-width: 800px){
             flex-direction: column;
         }
         
@@ -29,6 +29,7 @@
             counter-increment: numbers;
             background-color: colors.$main-color;
             color: #f6f6f6;
+            
             display: grid;
             place-items: center;
             width:1.5rem;
