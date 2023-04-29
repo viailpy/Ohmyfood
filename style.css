@@ -11,7 +11,25 @@ body {
 }
 
 main {
-  padding: 0 1rem;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  padding: 1rem 0;
+  margin: 0;
 }
 
 header {
@@ -60,21 +78,28 @@ header {
   transform: scale(1.03);
 }
 
+.fonction h2 {
+  margin: 2rem 0;
+  padding-left: 2rem;
+}
 .fonction ol {
   display: flex;
   justify-content: space-around;
   text-align: center;
   counter-reset: numbers;
   display: flex;
-  gap: 3rem;
+  padding: 0 2rem;
+  gap: 2rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .fonction ol {
     flex-direction: column;
   }
 }
 .fonction li {
   position: relative;
+  font-weight: 500;
+  font-size: 1.2rem;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1rem 2rem;
@@ -83,6 +108,7 @@ header {
   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
 }
 .fonction li::before {
+  /*pastille violette*/
   content: counter(numbers);
   counter-increment: numbers;
   background-color: #9356DC;
@@ -93,7 +119,8 @@ header {
   height: 1.5rem;
   border-radius: 50%;
   position: absolute;
-  bottom: 1.3rem;
+  top: 50%;
+  transform: translateY(-50%);
   left: -0.7rem;
 }
 .fonction li:hover {
@@ -110,5 +137,72 @@ header {
 /*@mixin lighten ($color){
     color: lighten($color: $color, $amount: 20%);
 }*/
+.menus {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+}
+.menus__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+@media (max-width: 1000px) {
+  .menus__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.menus__cards .new {
+  position: relative;
+}
+.menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 6rem;
+  background-color: #99e2d0;
+  color: #278870;
+  font-weight: 500;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 2px;
+}
+.menus .card {
+  height: 4rem;
+  flex-grow: 1;
+  min-width: 30rem;
+  height: 15rem;
+  gap: 1rem;
+}
+.menus .card .card__image {
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.menus .card__image-1 {
+  background-image: url(../../asset/images/restaurants/resto1.jpg);
+}
+.menus .card__image-2 {
+  background-image: url(../../asset/images/restaurants/resto2.jpg);
+}
+.menus .card__image-3 {
+  background-image: url(../../asset/images/restaurants/resto3.jpg);
+}
+.menus .card__image-4 {
+  background-image: url(../../asset/images/restaurants/resto4.jpg);
+}
+.menus .card__description {
+  border-radius: 0 0 1rem 1rem;
+}
+.menus .card__description h3 {
+  padding: 0.5rem 1rem;
+}
+.menus .card__description p {
+  padding: 0 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
