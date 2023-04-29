@@ -1,24 +1,54 @@
 @use "../utils/zoom";
 @use "../utils/boxshadow";
+@use "../utils/colors";
 
 .fonction {
     & ol {
         display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        @media (max-width: 800px){
+        justify-content: space-around;
+        text-align: center;
+        counter-reset: numbers;
+        display: flex;
+        gap: 3rem;
+        @media (max-width: 900px){
             flex-direction: column;
         }
     }
     & li {
-    background-color: #f6f6f6;
-    padding: 1rem 2rem;
-    flex-grow: 1;
-    border-radius: 1rem;
-    @include boxshadow.base-shadow;
-    &:hover {
+        position: relative;
+        &::before {
+            content:counter(numbers);
+            counter-increment: numbers;
+            background-color: colors.$main-color;
+            color: #f6f6f6;
+            display: grid;
+            place-items: center;
+            width:1.5rem;
+            height:1.5rem;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 1.3rem;
+            left: -0.7rem;
+            
+        }
+        
+        list-style-type: none;
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include boxshadow.base-shadow;
+        &:hover {
         @include zoom.zoom;
         /*include lighten a ajouter voir color dans mixin lighten*/
+    }
+    & i.fas{ 
+        margin-right: 1rem;
+        padding: 0.5rem;
+        color: colors.$lightgrey;
+        font-size: 1.5rem;
+
+
     }
 
 

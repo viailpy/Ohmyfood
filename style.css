@@ -54,7 +54,7 @@ header {
   border: none;
   border-radius: 2rem;
   transition: all 200ms;
-  box-shadow: 2px 1px 8px #000000;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
 }
 .explore button:hover {
   transform: scale(1.03);
@@ -62,24 +62,49 @@ header {
 
 .fonction ol {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-around;
+  text-align: center;
+  counter-reset: numbers;
+  display: flex;
+  gap: 3rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .fonction ol {
     flex-direction: column;
   }
 }
 .fonction li {
+  position: relative;
+  list-style-type: none;
   background-color: #f6f6f6;
   padding: 1rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
-  box-shadow: 2px 1px 8px #000000;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
+}
+.fonction li::before {
+  content: counter(numbers);
+  counter-increment: numbers;
+  background-color: #9356DC;
+  color: #f6f6f6;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1.3rem;
+  left: -0.7rem;
 }
 .fonction li:hover {
   transform: scale(1.03);
   /*include lighten a ajouter voir color dans mixin lighten*/
+}
+.fonction li i.fas {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  color: #7e7e7e;
+  font-size: 1.5rem;
 }
 
 /*@mixin lighten ($color){
