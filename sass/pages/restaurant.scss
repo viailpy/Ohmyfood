@@ -1,3 +1,55 @@
-img {
-    max-width: 100%;
+@use "../utils/colors";
+@use "../utils/mixins";
+
+.img-resto  img{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+   
+    
 }
+
+.title {
+    position: relative;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -2rem;
+    background-color: white;
+   
+& i {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    font-size: 2rem;
+    }
+& h2 {
+    font-family: "shrikhand","sans-serif";
+    padding:2rem ;
+    margin: 0;
+}
+    
+}
+
+
+
+
+.fas {
+    z-index:3;
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+    /*@include linear-gradient.gradient;*/
+    color: colors.$main-color;
+    
+    
+    
+    &:hover {
+     opacity: 1;
+     
+     }
+     &:not(:hover) {
+         opacity: 0;
+     }
+    }
+
+
+
+   
