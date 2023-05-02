@@ -250,7 +250,6 @@ footer {
 footer h3 {
   font-family: Shrikhand;
   font-weight: 400;
-  padding-bottom: 1rem;
 }
 footer p {
   padding: 0.3rem 0;
@@ -307,6 +306,9 @@ footer li {
   to {
     transform: scale(0);
   }
+}
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
