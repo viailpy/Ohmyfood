@@ -59,6 +59,10 @@ header {
   font-size: 1.5rem;
 }
 
+/*
+@mixin lighten {
+    background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+}*/
 .explore {
   text-align: center;
 }
@@ -343,6 +347,18 @@ footer li {
 }
 .fas:not(:hover) {
   opacity: 0;
+}
+
+.choise {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+@media (max-width: 800px) {
+  .choise {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

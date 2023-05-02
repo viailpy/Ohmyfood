@@ -4,9 +4,7 @@
 .img-resto  img{
     width: 100%;
     height: 25vh;
-    object-fit: cover;
-   
-    
+    object-fit: cover;  
 }
 
 .title {
@@ -15,22 +13,19 @@
     margin-top: -2rem;
     background-color: white;
    
-& i {
+    & i {
     position: absolute;
     right: 3rem;
     top: 50%;
     font-size: 2rem;
     }
-& h2 {
+    & h2 {
     font-family: "shrikhand","sans-serif";
     padding:2rem ;
     margin: 0;
-}
+    }
     
 }
-
-
-
 
 .fas {
     z-index:3;
@@ -39,17 +34,31 @@
     /*@include linear-gradient.gradient;*/
     color: colors.$main-color;
     
-    
-    
     &:hover {
-     opacity: 1;
+    opacity: 1;
      
-     }
-     &:not(:hover) {
+    }
+    &:not(:hover) {
          opacity: 0;
-     }
+    }
+}
+
+.choise {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+     gap: 1rem;
+    padding:  2rem;
+     @media (max-width:800px) {
+            grid-template-columns: 1fr;
+   
+   
+    &__category {
+       
+            
+        }
+
     }
 
 
-
+}
    
