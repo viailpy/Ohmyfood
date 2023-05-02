@@ -3,14 +3,13 @@
 @use "./sass/layout/recherche";
 @use "./sass/layout/explore";
 @use "./sass/layout/fonction";
-@use "./sass/utils/boxshadow";
-@use "./sass/utils/lighten";
-@use "./sass/utils/zoom";
+@use "./sass/utils/mixins";
 @use "./sass/utils/variable";
 @use "./sass/utils/colors";
 @use "./sass/layout/menus";
 @use "./sass/layout/footer";
 @use "./sass/layout/loader";
+
 
 
 

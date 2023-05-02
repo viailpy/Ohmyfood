@@ -1,0 +1,21 @@
+@use "../utils/colors";
+
+@mixin gradient {
+    background-image: linear-gradient(to top, colors.$main-color , colors.$second-color );
+}
+
+@mixin base-shadow {
+    box-shadow:2px 1px 8px #00000057;
+    &:hover {
+        box-shadow: 4px 2px 16px darken($color: #00000057, $amount: 100%);
+        
+}
+}
+
+@mixin zoom {
+    transform: scale(1.03);
+}
+
+@mixin lighten {
+    background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+}

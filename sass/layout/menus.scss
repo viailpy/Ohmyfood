@@ -1,6 +1,8 @@
 
 @use "../utils/colors";
-@use "../utils/boxshadow";
+@use "../utils/mixins";
+
+
 
 
 .menus {
@@ -13,7 +15,7 @@
     &__cards {
         display: grid; 
         grid-template-columns: 1fr 1fr;
-        gap:5rem;
+        gap:5rem 2rem;
        
         
         @media (max-width:800px){
@@ -91,6 +93,7 @@
         z-index:3;
         opacity:0;
         transition: opacity 0.5s ease-in-out;
+        /*@include linear-gradient.gradient;*/
         color: colors.$main-color;
         
         
@@ -106,8 +109,12 @@
      .card-box {
         
         border-radius: 1rem;
-        @include boxshadow.base-shadow;
+        @include mixins.base-shadow;
+        &:hover {
+            background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+        }
+        
+        }
        
      }
     }
-}

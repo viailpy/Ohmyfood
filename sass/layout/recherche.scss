@@ -4,7 +4,13 @@
     justify-content: center;
     gap: 1rem;
     background-color: #f3f3f3;
-    padding: 0.5rem;
+    padding: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    & p {
+        padding: 1rem 0;
+    }
+    
     
     & i {
         font-size: 1.5rem;

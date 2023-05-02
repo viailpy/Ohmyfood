@@ -1,5 +1,5 @@
-@use "../utils/zoom";
-@use "../utils/boxshadow";
+@use "../utils/mixins";
+
 @use "../utils/colors";
 
 .fonction {
@@ -22,6 +22,7 @@
         
     }
     & li {
+        cursor: pointer;
         position: relative;
         &::before {
             /*pastille violette*/
@@ -29,7 +30,6 @@
             counter-increment: numbers;
             background-color: colors.$main-color;
             color: #f6f6f6;
-            
             display: grid;
             place-items: center;
             width:1.5rem;
@@ -39,8 +39,7 @@
             top: 50%;
             transform: translateY(-50%);
             left: -0.7rem;
-           
-            
+              
         }
         font-weight: 500;
         font-size: 1.2rem;
@@ -49,23 +48,18 @@
         padding: 1rem 2rem;
         flex-grow: 1;
         border-radius: 1rem;
-        @include boxshadow.base-shadow;
+        @include mixins.base-shadow;
         &:hover {
-        @include zoom.zoom;
-        
-        /*include lighten a ajouter voir color dans mixin lighten*/
+            background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+            
+               
     }
     & i.fas{ 
         margin-right: 1rem;
         padding: 0.5rem;
         color: colors.$lightgrey;
         font-size: 1.5rem;
-       
-
-
     }
-
-
     }
 }
 

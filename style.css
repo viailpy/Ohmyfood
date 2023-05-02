@@ -48,7 +48,12 @@ header {
   justify-content: center;
   gap: 1rem;
   background-color: #f3f3f3;
-  padding: 0.5rem;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.recherche p {
+  padding: 1rem 0;
 }
 .recherche i {
   font-size: 1.5rem;
@@ -66,7 +71,6 @@ header {
   font-size: 1rem;
 }
 .explore button {
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
   font-size: 1rem;
   padding: 1rem 2rem;
@@ -74,6 +78,10 @@ header {
   border-radius: 2rem;
   transition: all 200ms;
   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.explore button:hover {
+  box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.3411764706);
 }
 .explore button:hover {
   transform: scale(1.03);
@@ -98,6 +106,7 @@ header {
   }
 }
 .fonction li {
+  cursor: pointer;
   position: relative;
   font-weight: 500;
   font-size: 1.2rem;
@@ -125,8 +134,10 @@ header {
   left: -0.7rem;
 }
 .fonction li:hover {
-  transform: scale(1.03);
-  /*include lighten a ajouter voir color dans mixin lighten*/
+  box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.3411764706);
+}
+.fonction li:hover {
+  background: white;
 }
 .fonction li i.fas {
   margin-right: 1rem;
@@ -135,9 +146,6 @@ header {
   font-size: 1.5rem;
 }
 
-/*@mixin lighten ($color){
-    color: lighten($color: $color, $amount: 20%);
-}*/
 .menus {
   background-color: #f6f6f6;
   padding: 2rem 2rem 0 2rem;
@@ -146,7 +154,7 @@ header {
 .menus__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 5rem 2rem;
 }
 @media (max-width: 800px) {
   .menus__cards {
@@ -214,6 +222,7 @@ header {
   z-index: 3;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  /*@include linear-gradient.gradient;*/
   color: #9356DC;
 }
 .menus .card .fas:hover {
@@ -225,6 +234,12 @@ header {
 .menus .card .card-box {
   border-radius: 1rem;
   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
+}
+.menus .card .card-box:hover {
+  box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.3411764706);
+}
+.menus .card .card-box:hover {
+  background: white;
 }
 
 footer {
