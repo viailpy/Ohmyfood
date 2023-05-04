@@ -38,6 +38,7 @@ header {
   padding: 0.3rem;
   margin: 0;
   position: relative;
+  background-color: #f7f7f7;
 }
 
 .recherche {
@@ -86,7 +87,6 @@ header {
 }
 .explore button:hover {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
-  transform: scale(1.02);
 }
 
 .fonction h2 {
@@ -124,7 +124,6 @@ header {
 }
 .fonction li:hover {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
-  transform: scale(1.02);
 }
 .fonction li:hover {
   background: white;
@@ -247,7 +246,6 @@ header {
 }
 .menus .card .card-box:hover {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
-  transform: scale(1.02);
 }
 .menus .card .card-box:hover {
   background: white;
@@ -427,7 +425,6 @@ footer p {
 }
 .choise__category:hover {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
-  transform: scale(1.02);
 }
 .choise__category:hover {
   background: white;
