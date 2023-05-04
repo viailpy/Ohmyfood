@@ -12,6 +12,7 @@
     
     
     
+    
     &__cards {
         display: grid; 
         grid-template-columns: 1fr 1fr;
@@ -52,7 +53,7 @@
         min-width: 20rem;
         height: 14rem;
         gap: 1rem;
-        
+        @include mixins.zoom;
         &__image {
             background-position: left 50% top 75%;
             background-size: cover;

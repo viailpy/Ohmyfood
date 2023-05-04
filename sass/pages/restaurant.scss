@@ -43,7 +43,7 @@
    
     & i {
     position: absolute;
-    right: 25rem;
+    right: 10%;
     top: 50%;
     font-size: 2rem;
     }
@@ -51,7 +51,7 @@
     display: grid;
     place-items: center;
     font-family: "shrikhand","sans-serif";
-    padding:2rem ;
+    padding:2rem 5rem 2rem 0;
     margin: 0;
     font-size: 3rem;
     font-weight: 500;
@@ -113,7 +113,8 @@
        animation: appear 2s ease-in-out;
        @include mixins.base-shadow;
         &:hover {
-            background: lighten($color: colors.$backgroundgrey, $amount: 100%); 
+            background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+            @include mixins.zoom; 
     
    
      }    

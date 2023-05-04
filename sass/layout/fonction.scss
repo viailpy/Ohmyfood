@@ -35,7 +35,8 @@
         border-radius: 1rem;
         @include mixins.base-shadow;
         &:hover {
-            background: lighten($color: colors.$backgroundgrey, $amount: 100%);      
+            background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+            @include mixins.zoom;      
         & i.fa-solid:hover  {
             color: colors.$main-color;
         }       
