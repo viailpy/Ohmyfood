@@ -7,8 +7,8 @@
 
 .menus {
     background-color: #f6f6f6;
-    padding: 0.5rem 2rem 0 2rem ;
-    margin: 3rem 0 8rem 0;
+    padding: 0.5rem 2rem 5rem  ;
+    margin: 5rem 0;
     
     
     
@@ -62,16 +62,16 @@
             
         }
         &__image-1 {
-            background-image: url(./asset/images/restaurants/resto1.jpg);
+            background-image: url(../asset/images/restaurants/resto1.jpg);
         }
         &__image-2 {
-            background-image: url(./asset/images/restaurants/resto2.jpg);
+            background-image: url(../asset/images/restaurants/resto2.jpg);
         }
         &__image-3 {
-            background-image: url(./asset/images/restaurants/resto3.jpg);
+            background-image: url(../asset/images/restaurants/resto3.jpg);
         }
         &__image-4 {
-            background-image: url(./asset/images/restaurants/resto4.jpg);
+            background-image: url(../asset/images/restaurants/resto4.jpg);
         }
         &__description {
             position: relative;
