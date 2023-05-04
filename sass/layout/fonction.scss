@@ -16,14 +16,30 @@
         padding:  0 2rem ;
         
         gap: 2rem;
-        @media (max-width: 800px){
+        @media (max-width: 1000px){
             flex-direction: column;
-        }
-        
+        }   
     }
     & li {
+        
         cursor: pointer;
         position: relative;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-weight: 500;
+        font-size: 1.2rem;
+        list-style-type: none;
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include mixins.base-shadow;
+        &:hover {
+            background: lighten($color: colors.$backgroundgrey, $amount: 100%);      
+        & i.fa-solid:hover  {
+            color: colors.$main-color;
+        }       
+    }
         &::before {
             /*pastille violette*/
             content:counter(numbers);
@@ -41,24 +57,13 @@
             left: -0.7rem;
               
         }
-        font-weight: 500;
-        font-size: 1.2rem;
-        list-style-type: none;
-        background-color: #f6f6f6;
-        padding: 1rem 2rem;
-        flex-grow: 1;
-        border-radius: 1rem;
-        @include mixins.base-shadow;
-        &:hover {
-            background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-            
-               
-    }
+       
     & i.fa-solid{ 
         margin-right: 1rem;
         padding: 0.5rem;
         color: colors.$lightgrey;
         font-size: 1.5rem;
+        
     }
     }
 }

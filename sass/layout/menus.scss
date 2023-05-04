@@ -7,7 +7,7 @@
 
 .menus {
     background-color: #f6f6f6;
-    padding: 2rem 2rem 0 2rem ;
+    padding: 0.5rem 2rem 0 2rem ;
     margin: 3rem 0 8rem 0;
     
     
@@ -15,12 +15,12 @@
     &__cards {
         display: grid; 
         grid-template-columns: 1fr 1fr;
-        gap:5rem 2rem;
+        gap:8rem 4rem;
        
         
         @media (max-width:800px){
             grid-template-columns: 1fr;
-            
+            gap:7rem 4rem;
         }
 
         .new {
@@ -48,7 +48,7 @@
         height: 4rem;
         flex-grow: 1;
         min-width: 20rem;
-        height: 15rem;
+        height: 14rem;
         gap: 1rem;
         
         &__image {
@@ -93,16 +93,14 @@
         z-index:3;
         opacity:0;
         transition: opacity 0.5s ease-in-out;
-        /*@include linear-gradient.gradient;*/
         color: colors.$main-color;
         
-        
         &:hover {
-         opacity: 1;
+            opacity: 1;
          
          }
          &:not(:hover) {
-             opacity: 0;
+            opacity: 0;
          }
         }
     

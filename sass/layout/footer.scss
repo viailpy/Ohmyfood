@@ -1,26 +1,36 @@
 @use "../utils/colors";
 
 footer {
+   @media (min-width:1000px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     
+    padding:1.4rem 3rem;
+    & p,h3 {
+        margin-top: 4rem;
+        
+
+    }
+  
+
+   }
+
     background-color: colors.$color-footer;
     color: white;
     padding: 2rem 1rem;
      & h3 {
         font-family: Shrikhand;
-        font-weight: 400;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 0rem 1rem 1rem 1rem;
         
     }
     & p {
-        padding:0.3rem 0;
+        padding:0.5rem 1rem;
         font-weight: 400;   
     }
-    & ol {
-        list-style: none;
-        padding: 0 
-    }
-    & li {
-        padding:  0.3rem 0;
-    }
+ 
 }
 
 .fa-utensils,

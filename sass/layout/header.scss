@@ -1,8 +1,10 @@
+@use "../utils/mixins";
+
 header {
+    box-shadow:2px 1px 8px #00000057;
     display: flex;
     font-family: "shrikhand";
     justify-content: center;
-    box-shadow: 0 0 0.5rem rgb(0 0 0/30%);
     padding: 0.3rem;
     margin: 0;
     position: relative;
