@@ -7,14 +7,17 @@
 
 .menus {
     background-color: #f6f6f6;
-    padding: 0.5rem 2rem 5rem  ;
+    padding: 2rem 2rem 5rem  ;
     margin: 5rem 0;
+    
     
     
     
     
     &__cards {
         display: grid; 
+        
+        justify-content: center;
         grid-template-columns: 1fr 1fr;
         gap:8rem 4rem;
        
@@ -47,10 +50,11 @@
 
 
     .card {
-        
         height: 4rem;
         flex-grow: 1;
         min-width: 20rem;
+        
+        
         height: 14rem;
         gap: 1rem;
         @include mixins.zoom;
@@ -62,16 +66,16 @@
             
         }
         &__image-1 {
-            background-image: url(../asset/images/restaurants/resto1.jpg);
+            background-image: url(./asset/images/restaurants/resto1.jpg);
         }
         &__image-2 {
-            background-image: url(../asset/images/restaurants/resto2.jpg);
+            background-image: url(./asset/images/restaurants/resto2.jpg);
         }
         &__image-3 {
-            background-image: url(../asset/images/restaurants/resto3.jpg);
+            background-image: url(./asset/images/restaurants/resto3.jpg);
         }
         &__image-4 {
-            background-image: url(../asset/images/restaurants/resto4.jpg);
+            background-image: url(./asset/images/restaurants/resto4.jpg);
         }
         &__description {
             position: relative;

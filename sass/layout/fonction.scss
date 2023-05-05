@@ -34,11 +34,12 @@
         flex-grow: 1;
         border-radius: 1rem;
         @include mixins.base-shadow;
-        &:hover {
+        &:hover  {
             background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-            @include mixins.zoom;      
-        & i.fa-solid:hover  {
-            color: colors.$main-color;
+            @include mixins.zoom;
+                   
+         i.fa-solid  {
+           color: colors.$main-color;
         }       
     }
         &::before {

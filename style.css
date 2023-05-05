@@ -136,7 +136,7 @@ header {
 .fonction li:hover:hover {
   transform: scale(1.03);
 }
-.fonction li:hover i.fa-solid:hover {
+.fonction li:hover i.fa-solid {
   color: #9356DC;
 }
 .fonction li::before {
@@ -164,11 +164,12 @@ header {
 
 .menus {
   background-color: #f6f6f6;
-  padding: 0.5rem 2rem 5rem;
+  padding: 2rem 2rem 5rem;
   margin: 5rem 0;
 }
 .menus__cards {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr;
   gap: 8rem 4rem;
 }
@@ -213,16 +214,16 @@ header {
   border-radius: 1rem 1rem 0 0;
 }
 .menus .card__image-1 {
-  background-image: url(../asset/images/restaurants/resto1.jpg);
+  background-image: url(./asset/images/restaurants/resto1.jpg);
 }
 .menus .card__image-2 {
-  background-image: url(../asset/images/restaurants/resto2.jpg);
+  background-image: url(./asset/images/restaurants/resto2.jpg);
 }
 .menus .card__image-3 {
-  background-image: url(../asset/images/restaurants/resto3.jpg);
+  background-image: url(./asset/images/restaurants/resto3.jpg);
 }
 .menus .card__image-4 {
-  background-image: url(../asset/images/restaurants/resto4.jpg);
+  background-image: url(./asset/images/restaurants/resto4.jpg);
 }
 .menus .card__description {
   position: relative;
@@ -335,7 +336,7 @@ footer p {
   }
 }
 .center {
-  max-width: 1500px;
+  max-width: 1300px;
   display: grid;
   margin: auto;
 }
