@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, ol {
   margin: 0;
   padding: 0;
   font-family: "roboto", sans-serif;
@@ -93,8 +93,11 @@ header {
   transform: scale(1.03);
 }
 
+.fonction {
+  max-width: 2000px;
+  margin: auto;
+}
 .fonction h2 {
-  margin: 2rem 0;
   padding-left: 2rem;
 }
 .fonction ol {
@@ -103,7 +106,7 @@ header {
   text-align: center;
   counter-reset: numbers;
   display: flex;
-  padding: 0 2rem;
+  padding: 2rem;
   gap: 2rem;
 }
 @media (max-width: 1000px) {
@@ -119,7 +122,7 @@ header {
   font-weight: 500;
   font-size: 1.2rem;
   list-style-type: none;
-  background-color: #f6f6f6;
+  background-color: #f7f7f7;
   padding: 1rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
@@ -158,14 +161,21 @@ header {
 .fonction li i.fa-solid {
   margin-right: 1rem;
   padding: 0.5rem;
-  color: #7e7e7e;
+  color: #f7f7f7;
   font-size: 1.5rem;
 }
 
+/*
+.background {
+    background-color: colors.$backgroundgrey;
+    width: 100vh;
+}
+*/
 .menus {
-  background-color: #f6f6f6;
-  padding: 2rem 2rem 5rem;
-  margin: 5rem 0;
+  padding: 1rem 2rem 8rem;
+  margin: 5rem 1rem;
+  max-width: 2000px;
+  margin: auto;
 }
 .menus__cards {
   display: grid;
@@ -200,6 +210,7 @@ header {
   height: 4rem;
   flex-grow: 1;
   min-width: 20rem;
+  background-color: #f7f7f7;
   height: 14rem;
   gap: 1rem;
   transition: all 300ms;
@@ -266,6 +277,8 @@ header {
 
 footer {
   background-color: #353535;
+  display: flex;
+  flex-direction: column;
   color: white;
   padding: 2rem 1rem;
 }
@@ -276,18 +289,21 @@ footer h3 {
   padding: 0rem 1rem 1rem 1rem;
 }
 footer p {
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   font-weight: 400;
 }
 @media (min-width: 1000px) {
   footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-end;
-    padding: 1.4rem 3rem;
   }
-  footer p, footer h3 {
-    margin-top: 4rem;
+  footer p {
+    margin-top: 3.7rem;
+  }
+  footer h3 {
+    order: 1;
+    margin-top: 3.5rem;
   }
 }
 
@@ -318,7 +334,7 @@ footer p {
   border-right: 10px solid #353535;
   border-top: 10px solid #9356DC;
   border-bottom: 10px solid #99e2d0;
-  border-left: 10px solid #7e7e7e;
+  border-left: 10px solid #f7f7f7;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -383,19 +399,6 @@ footer p {
   font-weight: 500;
 }
 
-.fas {
-  z-index: 3;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  color: #9356DC;
-}
-.fas:hover {
-  opacity: 1;
-}
-.fas:not(:hover) {
-  opacity: 0;
-}
-
 .choise {
   display: grid;
   grid-template-columns: 1fr;
@@ -420,21 +423,13 @@ footer p {
   top: 3.5rem;
 }
 .choise__category {
+  margin: 1rem 0;
   cursor: pointer;
   padding: 0rem;
   border-radius: 1rem;
   background-color: #f7f7f7;
-  animation: appear 2s ease-in-out;
   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
   transition: all 300ms;
-}
-@keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 .choise__category:hover {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
@@ -487,6 +482,48 @@ footer p {
   width: 4rem;
   border-radius: 0 1rem 1rem 0;
   transition: all 300ms;
+}
+
+.delay1 {
+  animation: appear 2s forwards ease-in-out;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.delay2 {
+  animation: appear 2s 0.5s forwards ease-in-out;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.delay3 {
+  animation: appear 2s 0.5s forwards ease-in-out;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

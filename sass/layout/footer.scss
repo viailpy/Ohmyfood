@@ -3,6 +3,8 @@
 
 footer {
     background-color: colors.$color-footer;
+    display: flex;
+    flex-direction: column;
     color: white;
     padding: 2rem 1rem;
      & h3 {
@@ -10,25 +12,32 @@ footer {
         font-size: 1.5rem;
         font-weight: 300;
         padding: 0rem 1rem 1rem 1rem;
-    
+        
     }
     & p {
-        padding:0.5rem 1rem;
+        padding:0.3rem 1rem;
         font-weight: 400;   
     }
-    
+   
+   
+
     @media (min-width:1000px) {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: flex-end;
-        padding:1.4rem 3rem;
-        & p,h3 {
-            margin-top: 4rem;
+       
+        & p {
+            margin-top: 3.7rem;
 
         }
+        & h3 {
+           order:1;
+           margin-top: 3.5rem;
+            
+        }
     }    
-}
 
+}
 .fa-utensils,
 .fa-handshake-angle {
     color: #ffffff;

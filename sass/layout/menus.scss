@@ -1,14 +1,19 @@
 
 @use "../utils/colors";
 @use "../utils/mixins";
-
-
-
+/*
+.background {
+    background-color: colors.$backgroundgrey;
+    width: 100vh;
+}
+*/
 
 .menus {
-    background-color: #f6f6f6;
-    padding: 2rem 2rem 5rem  ;
-    margin: 5rem 0;
+    
+    padding:  1rem 2rem 8rem ;
+    margin: 5rem 1rem;
+    max-width: 2000px;
+    margin: auto;
     
     
     
@@ -16,10 +21,10 @@
     
     &__cards {
         display: grid; 
-        
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         gap:8rem 4rem;
+      
        
         
         @media (max-width:800px){
@@ -53,7 +58,7 @@
         height: 4rem;
         flex-grow: 1;
         min-width: 20rem;
-        
+        background-color: colors.$backgroundgrey;
         
         height: 14rem;
         gap: 1rem;
@@ -101,7 +106,6 @@
         opacity:0;
         transition: opacity 0.5s ease-in-out;
         color: colors.$main-color;
-        
         &:hover {
             opacity: 1;
          

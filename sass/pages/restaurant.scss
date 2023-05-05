@@ -9,8 +9,6 @@
 }
 .zoom-header { 
     transition: all 500ms ease-in-out;
-    
-    
     &:hover {
         transform: scale(1.03);  
     } 
@@ -59,21 +57,7 @@
     
 }
 
-.fas {
-    z-index:3;
-    opacity:0;
-    transition: opacity 0.5s ease-in-out;
-    
-    color: colors.$main-color;
-    
-    &:hover {
-    opacity: 1;
-     
-    }
-    &:not(:hover) {
-         opacity: 0;
-    }
-}
+
   
 
 .choise {
@@ -83,8 +67,7 @@
     gap: 1rem;
     padding:  2rem;
     background-color:colors.$backgroundgrey;
-    
-            
+      
            
      & h3 {
     padding:  1rem 0;
@@ -104,20 +87,21 @@
         
     &__category {
           
-
+        margin: 1rem 0;
         cursor: pointer;
        padding: 0rem;
        border-radius: 1rem;
        background-color:colors.$backgroundgrey;
-        @include mixins.appear;
-       animation: appear 2s ease-in-out;
+       
        @include mixins.base-shadow;
         &:hover {
             background: lighten($color: colors.$backgroundgrey, $amount: 100%);
             @include mixins.zoom; 
-    
+    } 
    
-     }    
+    
+    
+
  }
     &__meal {
        display: flex; 
@@ -131,8 +115,6 @@
     }
     
 }    
-
-
 
     .description {
         padding: 0.5rem ;
@@ -176,7 +158,23 @@
         }
      
 
+     .delay1 {
+         @include mixins.appear;
+         animation: appear 2s forwards ease-in-out;
+     }
      
+     .delay2 {
+        @include mixins.appear;
+        animation: appear 2s 0.5s forwards ease-in-out;
+    }
+
+    .delay3 {
+        @include mixins.appear;
+        animation: appear 2s 0.5s forwards ease-in-out;
+    }
+
+
+
     
     
 
