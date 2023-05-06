@@ -421,7 +421,6 @@ footer p {
 @media (max-width: 800px) {
   .title h2 {
     font-size: 2rem;
-    display: flex;
   }
 }
 

@@ -3,7 +3,6 @@
 
 .center {
    max-width: 80vh;
-   
    display: grid;
    margin: auto;  
 }
@@ -69,7 +68,7 @@
     font-weight: 500;
     @media (max-width:800px) {
         font-size: 2rem;
-        display: flex;
+       
           
         }
     }
@@ -136,8 +135,6 @@
 
     .description {
         padding: 0.5rem ;
-        
-        
         & h4,p{
             font-size: x-large;
             padding: 0.3rem 1rem;
