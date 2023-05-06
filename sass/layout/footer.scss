@@ -2,6 +2,10 @@
 @use "../utils/mixins";
 
 footer {
+    @media (max-width:800px) {
+        width: 100vh;
+          
+    }
     background-color: colors.$color-footer;
     display: flex;
     flex-direction: column;
@@ -35,6 +39,7 @@ footer {
            margin-top: 3.5rem;
             
         }
+        
     }    
 
 }

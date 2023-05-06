@@ -1,6 +1,6 @@
 
 
-
+@use "./utils/mixins";
 @use "./utils/colors";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
 
@@ -8,6 +8,7 @@
 ::before,
 ::after {
     box-sizing: border-box;
+ 
 
 }
 
@@ -15,6 +16,8 @@ body,ol {
     margin: 0;
     padding: 0;
     font-family: "roboto",sans-serif;
+   
+    box-sizing: border-box;
     
 }
 main {
@@ -29,9 +32,10 @@ a {
 }
 
 
-h3,h4,p {
+h3,h4,p{
     margin: 0;
     padding: 0;
+    @include mixins.hidden;
 }
 
 .explore p {

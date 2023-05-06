@@ -1,12 +1,8 @@
 
 @use "../utils/colors";
 @use "../utils/mixins";
-/*
-.background {
-    background-color: colors.$backgroundgrey;
-    width: 100vh;
-}
-*/
+
+
 
 .menus {
     
@@ -31,6 +27,8 @@
             grid-template-columns: 1fr;
             gap:7rem 4rem;
         }
+
+        
 
         .new {
             position: relative;
@@ -86,44 +84,40 @@
             position: relative;
             
             h3 {
-             padding:  0.5rem 1rem ;
+             padding:0.7rem  1rem ;
             }
             p {
                 padding: 0 0 1rem 1rem   
             }
+        }
             i {
                 position: absolute;
                 right: 2rem;
                 top: 50%;
                 font-size: 2rem;
+                transform: translateY(-50%);
             }
+            .fas{
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: linear-gradient(to top,colors.$main-color,colors.$second-color);
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+            &:hover .fas {
+                opacity: 1;
+                     
+        }
                 
-       
-     }
-
-     .fas {
-        z-index:3;
-        opacity:0;
-        transition: opacity 0.5s ease-in-out;
-        color: colors.$main-color;
-        &:hover {
-            opacity: 1;
-         
-         }
-         &:not(:hover) {
-            opacity: 0;
-         }
-        }
-    
-     .card-box {
-        
-        border-radius: 1rem;
-        @include mixins.base-shadow;
-        &:hover {
+         .card-box {
+            border-radius: 1rem;
+            @include mixins.base-shadow;
+            &:hover {
             background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-        }
+            }
         
         }
        
-     }
+        }
     }

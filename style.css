@@ -9,6 +9,7 @@ body, ol {
   margin: 0;
   padding: 0;
   font-family: "roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 main {
@@ -24,6 +25,9 @@ a {
 h3, h4, p {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .explore p {
@@ -39,6 +43,11 @@ header {
   margin: 0;
   position: relative;
   background-color: #f7f7f7;
+}
+@media (max-width: 800px) {
+  header {
+    width: 100vh;
+  }
 }
 
 .recherche {
@@ -86,6 +95,12 @@ header {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   transition: all 300ms;
 }
+@media (max-width: 460px) {
+  .explore button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
 .explore button:hover {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
 }
@@ -115,6 +130,9 @@ header {
   }
 }
 .fonction li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   cursor: pointer;
   position: relative;
   white-space: nowrap;
@@ -161,16 +179,10 @@ header {
 .fonction li i.fa-solid {
   margin-right: 1rem;
   padding: 0.5rem;
-  color: #f7f7f7;
+  color: grey;
   font-size: 1.5rem;
 }
 
-/*
-.background {
-    background-color: colors.$backgroundgrey;
-    width: 100vh;
-}
-*/
 .menus {
   padding: 1rem 2rem 8rem;
   margin: 5rem 1rem;
@@ -240,28 +252,28 @@ header {
   position: relative;
 }
 .menus .card__description h3 {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
 }
 .menus .card__description p {
   padding: 0 0 1rem 1rem;
 }
-.menus .card__description i {
+.menus .card i {
   position: absolute;
   right: 2rem;
   top: 50%;
   font-size: 2rem;
+  transform: translateY(-50%);
 }
 .menus .card .fas {
-  z-index: 3;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  color: #9356DC;
+  transition: opacity 300ms ease-in-out;
 }
-.menus .card .fas:hover {
+.menus .card:hover .fas {
   opacity: 1;
-}
-.menus .card .fas:not(:hover) {
-  opacity: 0;
 }
 .menus .card .card-box {
   border-radius: 1rem;
@@ -281,6 +293,11 @@ footer {
   flex-direction: column;
   color: white;
   padding: 2rem 1rem;
+}
+@media (max-width: 800px) {
+  footer {
+    width: 100vh;
+  }
 }
 footer h3 {
   font-family: Shrikhand;
@@ -356,6 +373,11 @@ footer p {
   display: grid;
   margin: auto;
 }
+@media (max-width: 800px) {
+  .center {
+    width: 100vh;
+  }
+}
 
 .zoom-header {
   transition: all 500ms ease-in-out;
@@ -372,7 +394,7 @@ footer p {
 
 .fa-arrow-left {
   position: absolute;
-  left: 4rem;
+  left: 5%;
   top: 3rem;
   opacity: 0.7;
 }
@@ -386,8 +408,19 @@ footer p {
 .title i {
   position: absolute;
   right: 10%;
-  top: 50%;
+  top: 40%;
   font-size: 2rem;
+}
+.title .fas {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.title .fas:hover.fas {
+  opacity: 1;
 }
 .title h2 {
   display: grid;
@@ -397,6 +430,24 @@ footer p {
   margin: 0;
   font-size: 3rem;
   font-weight: 500;
+}
+@media (max-width: 800px) {
+  .title h2 {
+    font-size: 2rem;
+    display: flex;
+  }
+}
+
+.card-box {
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
+  transition: all 300ms;
+}
+.card-box:hover {
+  box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
+}
+.card-box:hover {
+  background: white;
 }
 
 .choise {
@@ -423,6 +474,7 @@ footer p {
   top: 3.5rem;
 }
 .choise__category {
+  box-sizing: border-box;
   margin: 1rem 0;
   cursor: pointer;
   padding: 0rem;
@@ -451,13 +503,12 @@ footer p {
 
 .description {
   padding: 0.5rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .description h4, .description p {
   font-size: x-large;
   padding: 0.3rem 1rem;
   opacity: 0.75;
+  display: flex;
 }
 .description p {
   font-size: large;
@@ -485,43 +536,49 @@ footer p {
 }
 
 .delay1 {
-  animation: appear 2s forwards ease-in-out;
+  animation: appear 2s backwards ease-in-out;
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .delay2 {
-  animation: appear 2s 0.5s forwards ease-in-out;
+  animation: appear 2s 1s backwards ease-in-out;
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .delay3 {
-  animation: appear 2s 0.5s forwards ease-in-out;
+  animation: appear 2s 2s backwards ease-in-out;
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }
