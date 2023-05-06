@@ -18,6 +18,7 @@ body,ol {
     font-family: "roboto",sans-serif;
    
     box-sizing: border-box;
+
     
 }
 main {
@@ -36,9 +37,13 @@ h3,h4,p{
     margin: 0;
     padding: 0;
     @include mixins.hidden;
+   
+
 }
 
 .explore p {
     padding: 2rem;
 }
+
+
 

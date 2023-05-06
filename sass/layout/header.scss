@@ -2,11 +2,7 @@
 @use "../utils/colors";
 
 header {
-    @media (max-width:800px) {
-        width: 100vh;
-       
-        
-    }
+    
     box-shadow:2px 1px 8px #00000057;
     display: flex;
     font-family: "shrikhand";

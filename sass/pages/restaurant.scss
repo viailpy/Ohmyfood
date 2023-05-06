@@ -2,17 +2,13 @@
 @use "../utils/mixins";
 
 .center {
-   max-width: 1300px;
+   max-width: 80vh;
    
    display: grid;
-   margin: auto;
-   @media (max-width:800px) {
-    width: 100vh;
-   
-    
+   margin: auto;  
 }
     
-}
+
 .zoom-header { 
     transition: all 500ms ease-in-out;
     &:hover {
@@ -35,7 +31,8 @@
      
 }
 .title {
-    
+    display: flex;
+    justify-content: space-around;
     position: relative;
     border-radius: 2rem 2rem 0 0;
     margin-top: -2rem;
@@ -44,7 +41,8 @@
     i {
     position: absolute;
     right: 10%;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 2rem;
     }
     
@@ -70,9 +68,9 @@
     font-size: 3rem;
     font-weight: 500;
     @media (max-width:800px) {
-            font-size: 2rem;
-            display: flex;
-            
+        font-size: 2rem;
+        display: flex;
+          
         }
     }
     }
@@ -130,8 +128,7 @@
        display: flex; 
        overflow: hidden;
        &:hover .check {
-            
-            margin-right: 0;
+           margin-right: 0;
         }
     }
     

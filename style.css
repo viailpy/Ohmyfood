@@ -44,11 +44,6 @@ header {
   position: relative;
   background-color: #f7f7f7;
 }
-@media (max-width: 800px) {
-  header {
-    width: 100vh;
-  }
-}
 
 .recherche {
   display: flex;
@@ -177,7 +172,6 @@ header {
   left: -0.7rem;
 }
 .fonction li i.fa-solid {
-  margin-right: 1rem;
   padding: 0.5rem;
   color: grey;
   font-size: 1.5rem;
@@ -294,11 +288,6 @@ footer {
   color: white;
   padding: 2rem 1rem;
 }
-@media (max-width: 800px) {
-  footer {
-    width: 100vh;
-  }
-}
 footer h3 {
   font-family: Shrikhand;
   font-size: 1.5rem;
@@ -369,14 +358,9 @@ footer p {
   }
 }
 .center {
-  max-width: 1300px;
+  max-width: 80vh;
   display: grid;
   margin: auto;
-}
-@media (max-width: 800px) {
-  .center {
-    width: 100vh;
-  }
 }
 
 .zoom-header {
@@ -400,6 +384,8 @@ footer p {
 }
 
 .title {
+  display: flex;
+  justify-content: space-around;
   position: relative;
   border-radius: 2rem 2rem 0 0;
   margin-top: -2rem;
@@ -408,7 +394,8 @@ footer p {
 .title i {
   position: absolute;
   right: 10%;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 2rem;
 }
 .title .fas {
