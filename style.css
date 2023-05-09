@@ -263,7 +263,7 @@ header {
   padding: 0 0 1rem 1rem;
 }
 .menus .card__description h3, .menus .card__description p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   opacity: 0.8;
 }
 .menus .card__description i {
@@ -512,7 +512,7 @@ footer p {
   padding: 0.5rem;
 }
 .description h4, .description p {
-  font-size: x-large;
+  font-size: 1.6rem;
   padding: 0.3rem 1rem;
   opacity: 0.85;
   display: flex;
