@@ -93,7 +93,7 @@
     background-color:colors.$backgroundgrey;
      
            
-     & h3 {
+    h3 {
     padding:  1rem 0;
     font-size: x-large;
     font-weight: 400;
@@ -135,13 +135,14 @@
 
     .description {
         padding: 0.5rem ;
-        & h4,p{
+        @include mixins.hidden;
+        h4,p{
             font-size: x-large;
             padding: 0.3rem 1rem;
             opacity: 0.75;
             display: flex;       
         }
-        & p {
+        p {
             font-size: large;
         }    
     }
@@ -173,7 +174,7 @@
          
     }
      
-     .delay2 {
+    .delay2 {
         @include mixins.appear;
         animation: appear 2s 1s backwards ease-in-out;
     }

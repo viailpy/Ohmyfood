@@ -8,17 +8,17 @@
     background-color: colors.$backgroundgrey;
   
 
-    & h2 {
+    h2 {
     padding-top: 2rem;
     font-size: 2rem;
     margin-top: 0;
     }
 
-    & p {
+    p {
     font-size: 1.5rem;
     font-weight: 300;
     }
-    & button {
+    button {
       @media (max-width:460px){
         font-size: 1rem;
         padding: 1rem 2rem;

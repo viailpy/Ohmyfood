@@ -25,13 +25,10 @@ a {
 h3, h4, p {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .explore p {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 header {
@@ -286,7 +283,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 2rem 1rem;
+  padding: 1.7rem 1rem;
 }
 footer h3 {
   font-family: Shrikhand;
@@ -489,6 +486,9 @@ footer p {
 
 .description {
   padding: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .description h4, .description p {
   font-size: x-large;

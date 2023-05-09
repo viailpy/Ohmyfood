@@ -8,41 +8,28 @@
 ::before,
 ::after {
     box-sizing: border-box;
- 
-
 }
-
 body,ol {
     margin: 0;
     padding: 0;
     font-family: "roboto",sans-serif;
-    box-sizing: border-box;
-   
-
-    
+    box-sizing: border-box;   
 }
 main {
     padding: 0 ;
     margin:0;
 }
-
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
-
 h3,h4,p{
     margin: 0;
     padding: 0;
-    @include mixins.hidden;
-   
-
+    
 }
-
 .explore p {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 

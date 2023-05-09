@@ -7,15 +7,15 @@ footer {
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 2rem 1rem;
-     & h3 {
+    padding: 1.7rem 1rem;
+    h3 {
         font-family: Shrikhand;
         font-size: 1.5rem;
         font-weight: 300;
         padding: 0rem 1rem 1rem 1rem;
         
     }
-    & p {
+    p {
         padding:0.3rem 1rem;
         font-weight: 400;   
     }
@@ -27,11 +27,11 @@ footer {
         flex-direction: row;
         justify-content: flex-end;
        
-        & p {
+        p {
             margin-top: 3.7rem;
 
         }
-        & h3 {
+        h3 {
            order:1;
            margin-top: 3.5rem;
             
