@@ -239,16 +239,16 @@ header {
   border-radius: 1rem 1rem 0 0;
 }
 .menus .card__image-1 {
-  background-image: url(./asset/images/restaurants/resto1.jpg);
+  background-image: url(../../asset/images/restaurants/resto1.jpg);
 }
 .menus .card__image-2 {
-  background-image: url(./asset/images/restaurants/resto2.jpg);
+  background-image: url(../../asset/images/restaurants/resto2.jpg);
 }
 .menus .card__image-3 {
-  background-image: url(./asset/images/restaurants/resto3.jpg);
+  background-image: url(../../asset/images/restaurants/resto3.jpg);
 }
 .menus .card__image-4 {
-  background-image: url(./asset/images/restaurants/resto4.jpg);
+  background-image: url(../../asset/images/restaurants/resto4.jpg);
 }
 .menus .card__description {
   position: relative;
