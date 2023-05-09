@@ -24,7 +24,7 @@
        
         @media (max-width:800px){
             grid-template-columns: 1fr;
-            gap:7rem 4rem;
+            gap:8rem 4rem;
         }
 
         .new {
@@ -56,6 +56,7 @@
         background-color: colors.$backgroundgrey;
         height: 14rem;
         gap: 1rem;
+        
         @include mixins.zoom;
         &__image {
             background-position: left 50% top 75%;
@@ -78,12 +79,17 @@
         }
         &__description {
             position: relative;
+            @include mixins.hide;
             
             h3{
-                padding:0.7rem  1rem ;
+                padding:0.7rem  1rem ;   
             }
             p{
-                padding: 0 0 1rem 1rem   
+                padding: 0 0 1rem 1rem;
+            }
+            h3,p {
+                font-size: 1.5rem;
+                opacity: 0.8;
             }
             
             i{

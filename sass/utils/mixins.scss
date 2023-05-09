@@ -40,8 +40,9 @@
     }
 }
 
-@mixin hidden{
-    overflow: hidden;
+@mixin hide{
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
