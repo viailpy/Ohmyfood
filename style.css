@@ -57,7 +57,7 @@ header {
   padding: 1rem 0;
 }
 .recherche i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .explore {
@@ -77,8 +77,8 @@ header {
   cursor: pointer;
   margin: 2rem;
   color: white;
-  font-size: 1.5rem;
-  padding: 2rem 4rem;
+  font-size: 1.2rem;
+  padding: 1.5rem 3rem;
   border: none;
   border-radius: 3rem;
   transition: all 300ms;
@@ -97,12 +97,16 @@ header {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
 }
 .explore button:hover {
+  opacity: 0.9;
+}
+.explore button:hover {
   transform: scale(1.03);
 }
 
 .fonction {
   max-width: 2000px;
   margin: auto;
+  padding: 1rem 0;
 }
 .fonction h2 {
   padding-left: 2rem;
@@ -172,6 +176,10 @@ header {
   padding: 0.5rem;
   color: grey;
   font-size: 1.5rem;
+}
+
+.background {
+  background-color: #f7f7f7;
 }
 
 .menus {
@@ -248,14 +256,14 @@ header {
 .menus .card__description p {
   padding: 0 0 1rem 1rem;
 }
-.menus .card i {
+.menus .card__description i {
   position: absolute;
   right: 2rem;
   top: 50%;
   font-size: 2rem;
   transform: translateY(-50%);
 }
-.menus .card .fas {
+.menus .card__description .fas {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -263,18 +271,18 @@ header {
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }
-.menus .card:hover .fas {
+.menus .card__description:hover .fas {
   opacity: 1;
 }
-.menus .card .card-box {
+.menus .card__description .card-box {
   border-radius: 1rem;
   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3411764706);
   transition: all 300ms;
 }
-.menus .card .card-box:hover {
+.menus .card__description .card-box:hover {
   box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.3411764706);
 }
-.menus .card .card-box:hover {
+.menus .card__description .card-box:hover {
   background: white;
 }
 
@@ -283,7 +291,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 1.7rem 1rem;
+  padding: 1rem;
 }
 footer h3 {
   font-family: Shrikhand;
@@ -306,7 +314,7 @@ footer p {
   }
   footer h3 {
     order: 1;
-    margin-top: 3.5rem;
+    margin: 3.5rem 0 0 3rem;
   }
 }
 
@@ -390,7 +398,7 @@ footer p {
 }
 .title i {
   position: absolute;
-  right: 10%;
+  right: 20%;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
@@ -438,8 +446,13 @@ footer p {
   grid-template-columns: 1fr;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 2rem 10rem;
   background-color: #f7f7f7;
+}
+@media (max-width: 800px) {
+  .choise {
+    padding: 1rem;
+  }
 }
 .choise h3 {
   padding: 1rem 0;

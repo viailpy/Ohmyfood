@@ -1,7 +1,10 @@
 @use "../utils/colors";
 
 @mixin gradient {
-    background-image: linear-gradient(to top, colors.$main-color , colors.$second-color );
+    background-image: linear-gradient(to top, colors.$main-color,colors.$second-color );
+    &:hover {
+        opacity: 0.9;
+    }
 }
 
 @mixin base-shadow {

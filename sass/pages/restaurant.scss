@@ -38,11 +38,11 @@
     background-color: colors.$backgroundgrey;
     
     i {
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
+        position: absolute;
+        right: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
     }
     
     .fas{
@@ -53,28 +53,26 @@
         opacity: 0;
         transition: opacity 300ms ease-in-out;
     
-    &:hover.fas {
-        opacity: 1;
+        &:hover.fas {
+            opacity: 1;
     }
 
+}
+& h2 {
+display: grid;
+place-items: center;
+font-family: "shrikhand","sans-serif";
+padding:2rem 5rem 2rem 0;
+margin: 0;
+font-size: 3rem;
+font-weight: 500;
+@media (max-width:800px) {
+    font-size: 2rem; 
     }
-    & h2 {
-    display: grid;
-    place-items: center;
-    font-family: "shrikhand","sans-serif";
-    padding:2rem 5rem 2rem 0;
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 500;
-    @media (max-width:800px) {
-        font-size: 2rem;
-       
-          
-        }
-    }
-    }
+}
+}
 
- .card-box {
+.card-box {
     
     border-radius: 1rem;
     @include mixins.base-shadow;
@@ -89,8 +87,11 @@
     grid-template-columns: 1fr ; 
     flex-direction: column;
     gap: 1rem;
-    padding:  2rem;
+    padding:   2rem 10rem;
     background-color:colors.$backgroundgrey;
+    @media (max-width:800px) {
+        padding: 1rem;
+    }
      
            
     h3 {
