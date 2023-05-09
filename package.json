@@ -4,14 +4,13 @@
   "description": "projet 4",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css",
-    "build": " postcss style.css -u autoprefixer cssnano -o ./build/style.min.css"
+    "sass": "sass --watch style.scss style.css"
+    
   },
   "author": "viailpy",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "cssnano": "^6.0.1",
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
     "sass": "^1.62.1"
