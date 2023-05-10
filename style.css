@@ -601,7 +601,7 @@ footer p {
 
 /*animation description menu*/
 .delay1 {
-  animation: appear 2s backwards ease-in-out;
+  animation: appear 1.5s backwards ease-in-out;
 }
 @keyframes appear {
   0% {
@@ -617,7 +617,7 @@ footer p {
 }
 
 .delay2 {
-  animation: appear 2s 1s backwards ease-in-out;
+  animation: appear 1.5s 1s backwards ease-in-out;
 }
 @keyframes appear {
   0% {
@@ -633,7 +633,7 @@ footer p {
 }
 
 .delay3 {
-  animation: appear 2s 2s backwards ease-in-out;
+  animation: appear 1.5s 2s backwards ease-in-out;
 }
 @keyframes appear {
   0% {

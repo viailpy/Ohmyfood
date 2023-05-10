@@ -37,18 +37,18 @@
     padding: 1rem 2rem;
     flex-grow: 1;
     border-radius: 1rem;
-     @include mixins.base-shadow;
-     &:hover {
-       background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-       @include mixins.zoom;
-       
-       i.fa-solid {
+    @include mixins.base-shadow;
+    &:hover {
+      background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+      @include mixins.zoom;
+
+      i.fa-solid {
         color: colors.$main-color;
       }
     }
     &::before {
       /*pastille violette*/
-      
+
       content: counter(numbers);
       counter-increment: numbers;
       background-color: colors.$main-color;
@@ -63,7 +63,7 @@
       transform: translateY(-50%);
       left: -0.7rem;
     }
-    
+
     i.fa-solid {
       padding: 0.5rem;
       color: grey;
@@ -71,4 +71,3 @@
     }
   }
 }
-
