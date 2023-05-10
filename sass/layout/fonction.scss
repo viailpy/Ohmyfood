@@ -3,80 +3,72 @@
 @use "../utils/colors";
 
 .fonction {
-    max-width: 2000px;
-    margin: auto;
-    padding:1rem 0 ;
+  max-width: 2000px;
+  margin: auto;
+  padding: 1rem 0;
 
-   
-    h2 {
-       padding-left: 2rem;
-       
+  h2 {
+    padding-left: 2rem;
+  }
+  ol {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    counter-reset: numbers;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    @media (max-width: 1000px) {
+      flex-direction: column;
     }
-    ol {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        counter-reset: numbers;
-        display: flex;
-        padding:  2rem ;
-        gap: 2rem;
-        @media (max-width: 1000px){
-            flex-direction: column;
-        }   
-    }
-    li { 
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        cursor: pointer;
-        position: relative;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        font-weight: 500;
-        font-size: 1.2rem;
-        list-style-type: none;
-        background-color: colors.$backgroundgrey;
-        padding: 1rem 2rem;
-        flex-grow: 1;
-        border-radius: 1rem;
+  }
+  li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font-size: 1.2rem;
+    list-style-type: none;
+    background-color: colors.$backgroundgrey;
+    padding: 1rem 2rem;
+    flex-grow: 1;
+    border-radius: 1rem;
 
-        @include mixins.base-shadow;
-        &:hover  {
-            background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-            @include mixins.zoom;
-                   
-        i.fa-solid  {
-           color: colors.$main-color;
-        }       
+    @include mixins.base-shadow;
+    &:hover {
+      background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+      @include mixins.zoom;
+
+      i.fa-solid {
+        color: colors.$main-color;
+      }
     }
-        &::before {
-            /*pastille violette*/
-            
-            content:counter(numbers);
-            counter-increment: numbers;
-            background-color: colors.$main-color;
-            color: #f6f6f6;
-            display: grid;
-            place-items: center;
-            width:1.5rem;
-            height:1.5rem;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: -0.7rem;
-              
-        }
-       
-    i.fa-solid{ 
-        
-        padding: 0.5rem;
-        color: grey;
-        font-size: 1.5rem;
-        
+    &::before {
+      /*pastille violette*/
+
+      content: counter(numbers);
+      counter-increment: numbers;
+      background-color: colors.$main-color;
+      color: #f6f6f6;
+      display: grid;
+      place-items: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -0.7rem;
     }
+
+    i.fa-solid {
+      padding: 0.5rem;
+      color: grey;
+      font-size: 1.5rem;
     }
+  }
 }
-
-
-    

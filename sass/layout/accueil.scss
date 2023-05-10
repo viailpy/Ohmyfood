@@ -1,119 +1,114 @@
-
 @use "../utils/colors";
 @use "../utils/mixins";
 
 .background {
-    background-color: colors.$backgroundgrey;
+  background-color: colors.$backgroundgrey;
 }
 
 .menus {
-    padding:  1rem 2rem 8rem ;
-    margin: 5rem 1rem;
-    max-width: 2000px;
-    margin: auto;
-    &__cards {
-    display: grid; 
+  padding: 1rem 2rem 8rem;
+  margin: 5rem 1rem;
+  max-width: 2000px;
+  margin: auto;
+  &__cards {
+    display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
-    gap:8rem 4rem; 
-        @media (max-width:800px){
-        grid-template-columns: 1fr;
-        gap:8rem 4rem;
+    gap: 8rem 4rem;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      gap: 8rem 4rem;
     }
-        
+
     .new {
-        position: relative;
+      position: relative;
     }
     .new::before {
-        content:"Nouveau";
-        position: absolute;
-        height: 2rem;
-        width: 6rem;
-        background-color:colors.$color-tertiary ;
-        color: darken($color: colors.$color-tertiary, $amount:40%);
-        font-weight: 500;
-        display: grid;
-        place-items: center;
-        right: 1rem;
-        top: 1rem;
-        border-radius: 2px;
-        }    
+      content: "Nouveau";
+      position: absolute;
+      height: 2rem;
+      width: 6rem;
+      background-color: colors.$color-tertiary;
+      color: darken($color: colors.$color-tertiary, $amount: 40%);
+      font-weight: 500;
+      display: grid;
+      place-items: center;
+      right: 1rem;
+      top: 1rem;
+      border-radius: 2px;
     }
+  }
 }
 .card {
-    height: 4rem;
-    flex-grow: 1;
-    min-width: 20rem;
-    background-color: colors.$backgroundgrey;
+  height: 4rem;
+  flex-grow: 1;
+  min-width: 20rem;
+  background-color: colors.$backgroundgrey;
+  height: 14rem;
+  gap: 1rem;
+  @include mixins.zoom;
+  &__image {
+    background-position: left 50% top 75%;
+    background-size: cover;
     height: 14rem;
-    gap: 1rem;
-    @include mixins.zoom;
-        &__image {
-            background-position: left 50% top 75%;
-            background-size: cover;
-            height: 14rem;
-            border-radius: 1rem 1rem 0 0;  
-            
-        }
-        &__image-1 {
-            background-image: url(./asset/images/restaurants/resto1.jpg);
-        }
-        &__image-2 {
-            background-image: url(./asset/images/restaurants/resto2.jpg);
-        }
-        &__image-3 {
-            background-image: url(./asset/images/restaurants/resto3.jpg);
-        }
-        &__image-4 {
-            background-image: url(./asset/images/restaurants/resto4.jpg);
-        }
-        &__description {
-            position: relative;
-            @include mixins.hide;
-            
-            h3{
-                padding:0.7rem  1rem ;   
-            }
-            p{
-                padding: 0 0 1rem 1rem;
-            }
-            h3,p {
-                font-size: 1.6rem;
-                opacity: 0.8;
-            }
-            i{
-                position: absolute;
-                right: 2rem;
-                top: 50%;
-                font-size: 2rem;
-                transform: translateY(-50%);
-            }
-            .fas{
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                background-image: linear-gradient(to top,colors.$main-color,colors.$second-color);
-                opacity: 0;
-                transition: opacity 300ms ease-in-out;
-            }
-            &:hover .fas {
-                opacity: 1;
-            }
-            
-            
-            .card-box {
-                border-radius: 1rem;
-                @include mixins.base-shadow;
-                &:hover {
-                    background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-                }
-                
-            }
-            
-        }
+    border-radius: 1rem 1rem 0 0;
+  }
+  &__image-1 {
+    background-image: url(./asset/images/restaurants/resto1.jpg);
+  }
+  &__image-2 {
+    background-image: url(./asset/images/restaurants/resto2.jpg);
+  }
+  &__image-3 {
+    background-image: url(./asset/images/restaurants/resto3.jpg);
+  }
+  &__image-4 {
+    background-image: url(./asset/images/restaurants/resto4.jpg);
+  }
+  &__description {
+    position: relative;
+    @include mixins.hide;
+
+    h3 {
+      padding: 0.7rem 1rem;
+    }
+    p {
+      padding: 0 0 1rem 1rem;
+    }
+    h3,
+    p {
+      font-size: 1.6rem;
+      opacity: 0.8;
+    }
+    i {
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      font-size: 2rem;
+      transform: translateY(-50%);
+    }
+    .fas {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(
+        to top,
+        colors.$main-color,
+        colors.$second-color
+      );
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+    .fa-heart:hover {
+      opacity: 1;
     }
 
-
-
-
-
+    .card-box {
+      border-radius: 1rem;
+      @include mixins.base-shadow;
+      &:hover {
+        background: lighten($color: colors.$backgroundgrey, $amount: 100%);
+      }
+    }
+  }
+}

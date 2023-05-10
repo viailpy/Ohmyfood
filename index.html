@@ -1,107 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="../asset/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../asset/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../asset/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <script src="https://kit.fontawesome.com/b678b1b7af.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../asset/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../asset/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../asset/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/b678b1b7af.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Oh My Food</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="chargement"></div>
     <header>
-        <h1>Ohmyfood</h1>
+      <h1>Ohmyfood</h1>
     </header>
 
     <main>
-        <form class="recherche">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Paris,Belleville</p>
-        </form>
-        <section class="explore">
-            <h2>Réservez le menu  qui<br> vous convient</h2>
-            <p>Découvrez des restaurants d'exceptions,<br> selectionnés par nos soins.</p>
-            <button> Explorez nos restaurants</button>
+      <form class="recherche">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Paris,Belleville</p>
+      </form>
+      <section class="explore">
+        <h2>
+          Réservez le menu qui<br />
+          vous convient
+        </h2>
+        <p>
+          Découvrez des restaurants d'exceptions,<br />
+          selectionnés par nos soins.
+        </p>
+        <button>Explorez nos restaurants</button>
+      </section>
+      <section class="fonction">
+        <h2>Fonctionnement</h2>
+        <ol>
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Choisissez un restaurant</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-list ul"></i>
+            <p>Composez votre menu</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-store"></i>
+            <p>Dégustez au restaurant</p>
+          </li>
+        </ol>
+      </section>
 
-        </section>
-        <section class="fonction">
-            <h2>Fonctionnement</h2>
-            <ol>
-                <li><i class="fa-solid fa-mobile-screen-button"></i><p>Choisissez un restaurant</p></li>
-                <li><i class="fa-solid fa-list ul"></i><p>Composez votre menu</p></li>
-                <li><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></li>
-            </ol>
-        </section>
-
-        <section  class="background">
-            <div class="menus">
-            <h2>Restaurants</h2>
-            <div class="menus__cards">
-
-                <a href="./restos/resto1.html" class="card new">
-                    <div class="card-box">
-                    <div class="card__image card__image-1"></div>
-                    <div class="card__description">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
+      <section class="background">
+        <div class="menus">
+          <h2>Restaurants</h2>
+          <div class="menus__cards">
+            <a href="./restos/resto1.html" class="card new">
+              <div class="card-box">
+                <div class="card__image card__image-1"></div>
+                <div class="card__description">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </div>
-                </a>
+              </div>
+            </a>
 
-                <a href="./restos/resto2.html" class="card new">
-                <div class="card-box">
-                    <div class="card__image card__image-2"></div>
-                    <div class="card__description">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
+            <a href="./restos/resto2.html" class="card new">
+              <div class="card-box">
+                <div class="card__image card__image-2"></div>
+                <div class="card__description">
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </div>
-                </a>
-                
-                <a href="./restos/resto3.html" class="card">
-                <div class="card-box">    
-                    <div class="card__image card__image-3"></div>
-                    <div class="card__description">
-                        <h3>A la francaise</h3>
-                        <p>Cité Rouge</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-                </a>
+              </div>
+            </a>
 
-                <a href="./restos/resto4.html" class="card">
-                <div class="card-box">    
-                    <div class="card__image card__image-4"></div>
-                    <div class="card__description">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
+            <a href="./restos/resto3.html" class="card">
+              <div class="card-box">
+                <div class="card__image card__image-3"></div>
+                <div class="card__description">
+                  <h3>A la francaise</h3>
+                  <p>Cité Rouge</p>
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </div>
-                </a>
-            </div>
-            </div>
-        </section>
+              </div>
+            </a>
+
+            <a href="./restos/resto4.html" class="card">
+              <div class="card-box">
+                <div class="card__image card__image-4"></div>
+                <div class="card__description">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <h3>ohmyfood</h3>
-            <p><i class="fa-solid fa-utensils fa"></i>Proposer un restaurant</p>
-            <p><i class="fa-solid fa-handshake-angle fa"></i> Devenir partenaire</p>   
-            <p>Mentions légales</p>
-            <p><a href="mailto:geraldsoquet@gmail.com"> Contact</a></p>
+      <h3>ohmyfood</h3>
+      <p><i class="fa-solid fa-utensils fa"></i>Proposer un restaurant</p>
+      <p><i class="fa-solid fa-handshake-angle fa"></i> Devenir partenaire</p>
+      <p>Mentions légales</p>
+      <p><a href="mailto:geraldsoquet@gmail.com"> Contact</a></p>
     </footer>
-    
-</body>
+  </body>
 </html>

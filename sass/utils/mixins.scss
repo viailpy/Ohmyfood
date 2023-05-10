@@ -1,48 +1,48 @@
 @use "../utils/colors";
 
 @mixin gradient {
-    background-image: linear-gradient(to top, colors.$main-color,colors.$second-color );
-    &:hover {
-        opacity: 0.9;
-    }
+  background-image: linear-gradient(
+    to top,
+    colors.$main-color,
+    colors.$second-color
+  );
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 @mixin base-shadow {
-    box-shadow:2px 1px 8px #00000057;
-    transition: all 300ms;
-    &:hover {
-        box-shadow: 6px 4px 16px darken($color: #00000057, $amount: 100%);
-          
-    }
+  box-shadow: 2px 1px 8px #00000057;
+  transition: all 300ms;
+  &:hover {
+    box-shadow: 6px 4px 16px darken($color: #00000057, $amount: 100%);
+  }
 }
 
-
 @mixin appear {
-    @keyframes appear {
-        0% {
-           animation-fill-mode: forwards;
-           visibility: hidden;
-           transform: translateY(50%);
-            opacity: 0;
-        }
-        100% {
-           
-            transform:translateY(0);
-            opacity: 1;
-        }
+  @keyframes appear {
+    0% {
+      animation-fill-mode: forwards;
+      visibility: hidden;
+      transform: translateY(50%);
+      opacity: 0;
     }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 
 @mixin zoom {
-    transition: all 300ms;
-    &:hover {
-        transform: scale(1.03);
-    }
+  transition: all 300ms;
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
-@mixin hide{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    
+@mixin hide {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

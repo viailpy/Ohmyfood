@@ -1,19 +1,19 @@
 @use "../utils/colors";
 
 .recherche {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    background-color: colors.$color-recherche;
-    padding: 0.6rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    opacity: 0.8;
-    p {
-        padding: 1rem 0;
-    }
-    i {
-        font-size: 1.2rem;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: colors.$color-recherche;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0.8;
+  p {
+    padding: 1rem 0;
+  }
+  i {
+    font-size: 1.2rem;
+  }
 }
