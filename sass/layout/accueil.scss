@@ -42,7 +42,7 @@
 .card {
   height: 4rem;
   flex-grow: 1;
-  min-width: 20rem;
+  min-width: 15rem;
   background-color: colors.$backgroundgrey;
   height: 14rem;
   gap: 1rem;
@@ -67,7 +67,6 @@
   }
   &__description {
     position: relative;
-    @include mixins.hide;
 
     h3 {
       padding: 0.7rem 1rem;
@@ -78,7 +77,10 @@
     h3,
     p {
       font-size: 1.6rem;
-      opacity: 0.8;
+      opacity: 0.9;
+      @media (max-width: 360px) {
+        font-size: 1.2rem;
+      }
     }
     i {
       position: absolute;
@@ -86,6 +88,10 @@
       top: 50%;
       font-size: 2rem;
       transform: translateY(-50%);
+      @media (max-width: 360px) {
+        font-size: 1.5rem;
+        right: 1rem;
+      }
     }
     .fas {
       background-clip: text;
@@ -111,4 +117,8 @@
       }
     }
   }
+}
+p,
+h2 {
+  @include mixins.ellipsis;
 }
