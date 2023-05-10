@@ -44,12 +44,7 @@
     transform: translateY(-50%);
     font-size: 2rem;
     @media (min-width: 1200px) {
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 50%;
-      right: 0;
-      text-align: center;
+     right: 22%;
     }
   }
   & h2 {
@@ -189,13 +184,13 @@
 /*animation description menu*/
 .delay1 {
   @include mixins.appear;
-  animation: appear 1.5s backwards ease-in-out;
+  animation: appear 1s backwards ease-in-out;
 }
 .delay2 {
   @include mixins.appear;
-  animation: appear 1.5s 1s backwards ease-in-out;
+  animation: appear 1s 0.5s backwards ease-in-out;
 }
 .delay3 {
   @include mixins.appear;
-  animation: appear 1.5s 2s backwards ease-in-out;
+  animation: appear 1s 1s backwards ease-in-out;
 }
