@@ -1,6 +1,6 @@
 @use "../utils/colors";
 
-.chargement {
+#loader {
   z-index: 5;
   $animation-duration: 1s;
   position: fixed;
