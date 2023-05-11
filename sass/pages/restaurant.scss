@@ -2,12 +2,7 @@
 @use "../utils/mixins";
 
 /*header*/
-.zoom-header {
-  transition: all 500ms ease-in-out;
-  &:hover {
-    transform: scale(1.03);
-  }
-}
+
 .fa-arrow-left {
   position: absolute;
   left: 5%;
@@ -132,7 +127,7 @@
     @include mixins.base-shadow;
     &:hover {
       background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-      @include mixins.zoom;
+      /*@include mixins.zoom;*/
     }
   }
   &__meal {

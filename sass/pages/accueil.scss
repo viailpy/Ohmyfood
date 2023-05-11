@@ -99,8 +99,8 @@
       color: transparent;
       background-image: linear-gradient(
         to bottom,
-        colors.$second-color
         colors.$main-color,
+        colors.$second-color
       );
       opacity: 0;
       transition: opacity 300ms ease-in-out;
@@ -108,6 +108,7 @@
     .fa-heart:hover {
       opacity: 1;
     }
+   
 
     .card-box {
       border-radius: 1rem;

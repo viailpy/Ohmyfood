@@ -5,6 +5,13 @@
 ::after {
   box-sizing: border-box;
 }
+
+header {
+  transition: all 500ms ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
 body,
 ol {
   margin: 0;
