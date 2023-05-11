@@ -310,7 +310,7 @@ h2 {
 }
 @media (max-width: 360px) {
   .menus__cards .card__description i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     right: 1rem;
   }
 }
