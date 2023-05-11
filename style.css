@@ -223,10 +223,10 @@ h2 {
   gap: 8rem 4rem;
   /*patch "nouveau"*/
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .menus__cards {
     grid-template-columns: 1fr;
-    gap: 8rem 4rem;
+    gap: 4rem;
   }
 }
 .menus__cards .card-box {
@@ -257,6 +257,11 @@ h2 {
   background-size: cover;
   height: 14rem;
   border-radius: 1rem 1rem 0 0;
+}
+@media (max-width: 1000px) {
+  .menus__cards .card__image {
+    height: 10rem;
+  }
 }
 .menus__cards .card__image-1 {
   background-image: url(./asset/images/restaurants/resto1.jpg);
