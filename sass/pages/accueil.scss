@@ -24,6 +24,9 @@ h2 {
       grid-template-columns: 1fr;
       gap: 4rem;
     }
+    @media (max-width:500px){
+      gap: 2rem;
+    }
     .card-box {
       border-radius: 1rem;
       @include mixins.base-shadow;
