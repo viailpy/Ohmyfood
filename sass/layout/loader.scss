@@ -1,6 +1,7 @@
 @use "../utils/colors";
 
 .chargement {
+  z-index: 5;
   $animation-duration: 1s;
   position: fixed;
   display: grid;
