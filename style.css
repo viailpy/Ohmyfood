@@ -289,10 +289,11 @@ h2 {
   font-size: 1.6rem;
   opacity: 0.9;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .menus__cards .card__description h3,
   .menus__cards .card__description p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.5rem;
   }
 }
 .menus__cards .card__description i {
