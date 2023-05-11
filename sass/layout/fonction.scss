@@ -1,7 +1,6 @@
 @use "../utils/mixins";
-
 @use "../utils/colors";
-
+/* bouton partie fonctionnement*/
 .fonction {
   max-width: 2000px;
   margin: auto;
@@ -46,9 +45,8 @@
         color: colors.$main-color;
       }
     }
+    /*pastille violette*/
     &::before {
-      /*pastille violette*/
-
       content: counter(numbers);
       counter-increment: numbers;
       background-color: colors.$main-color;

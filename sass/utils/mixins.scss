@@ -1,5 +1,5 @@
 @use "../utils/colors";
-
+/*couleur gradient sur bouton*/
 @mixin gradient {
   background-image: linear-gradient(
     to top,
@@ -10,7 +10,7 @@
     opacity: 0.9;
   }
 }
-
+/*ombres boutons*/
 @mixin base-shadow {
   box-shadow: 2px 1px 8px #00000057;
   transition: all 300ms;
@@ -18,7 +18,7 @@
     box-shadow: 6px 4px 16px darken($color: #00000057, $amount: 100%);
   }
 }
-
+/*animation appartion des plats*/
 @mixin appear {
   @keyframes appear {
     0% {
@@ -33,14 +33,14 @@
     }
   }
 }
-
+/*zoom sur card restos*/
 @mixin zoom {
   transition: all 300ms;
   &:hover {
     transform: scale(1.03);
   }
 }
-
+/*point de suspention fin de phrase*/
 @mixin ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -1,6 +1,7 @@
 @use "../utils/mixins";
 @use "../utils/colors";
 
+/*section avec la description et le bouton explorez*/
 .explore {
   text-align: center;
   background-color: colors.$backgroundgrey;
@@ -19,6 +20,7 @@
     @media (max-width: 460px) {
       font-size: 1rem;
       padding: 1rem 2rem;
+      margin: auto;
     }
 
     cursor: pointer;
