@@ -1,8 +1,8 @@
 @use "../utils/colors";
 
 #loader {
-  z-index: 5;
-  $animation-duration: 1.5s;
+  z-index:3;
+  $animation-duration: 2s;
   position: fixed;
   display: grid;
   place-items: center;

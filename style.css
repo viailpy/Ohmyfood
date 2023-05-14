@@ -81,9 +81,9 @@ header {
 .explore {
   text-align: center;
   background-color: #f7f7f7;
+  padding: 2rem 0;
 }
 .explore h2 {
-  padding-top: 2rem;
   font-size: 2rem;
   margin-top: 0;
 }
@@ -119,7 +119,7 @@ header {
   opacity: 0.9;
 }
 .explore button:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 /* bouton partie fonctionnement*/
@@ -172,7 +172,7 @@ header {
   transition: all 300ms;
 }
 .fonction li:hover:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 .fonction li:hover i.fa-solid {
   color: #9356dc;
@@ -255,7 +255,7 @@ h2 {
   transition: all 300ms;
 }
 .menus__cards .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 .menus__cards .card__image {
   background-position: left 50% top 75%;
@@ -387,7 +387,7 @@ footer p {
 }
 
 #loader {
-  z-index: 5;
+  z-index: 3;
   position: fixed;
   display: grid;
   place-items: center;
@@ -395,7 +395,7 @@ footer p {
   height: 100vh;
   inset: 0;
   opacity: 0.9;
-  animation: out 200ms 1.5s forwards;
+  animation: out 200ms 2s forwards;
   transform-origin: center;
 }
 #loader::after {
@@ -407,7 +407,7 @@ footer p {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  animation: spin 1.5s infinite ease-in-out;
+  animation: spin 2s infinite ease-in-out;
 }
 
 @keyframes spin {

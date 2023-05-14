@@ -37,7 +37,7 @@
 @mixin zoom {
   transition: all 300ms;
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
   }
 }
 /*point de suspention fin de phrase*/
