@@ -1,7 +1,7 @@
 @use "../utils/colors";
 
 #loader {
-  z-index:3;
+  z-index:10;
   $animation-duration: 2s;
   position: fixed;
   display: grid;
@@ -13,7 +13,7 @@
   animation: out 200ms $animation-duration forwards;
   transform-origin: center;
 
-  &::after {
+  &::before {
     content: "";
     border-right: 10px solid colors.$color-footer;
     border-top: 10px solid colors.$main-color;
