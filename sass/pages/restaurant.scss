@@ -62,7 +62,7 @@
       place-items: center;
     }
   }
-
+/*coeur et animation*/
   .fas {
     background-clip: text;
     -webkit-background-clip: text;
@@ -81,14 +81,6 @@
   }
 }
 
-.card-box {
-  box-sizing: border-box;
-  border-radius: 1rem;
-  @include mixins.base-shadow;
-  &:hover {
-    background: lighten($color: colors.$backgroundgrey, $amount: 100%);
-  }
-}
 /*choix des plats*/
 .choise {
   display: flex;
@@ -153,7 +145,7 @@
     font-size: 1.1rem;
   }
 }
-
+/*prix*/
 .price {
   display: flex;
   align-items: flex-end;
