@@ -7,13 +7,13 @@
   display: grid;
   place-items: center;
   background-color: #ffffff;
-  height: 100vh;
+  height: 150vh;
   inset: 0;
   opacity: 0.9;
   animation: out 200ms $animation-duration forwards;
   transform-origin: center;
 
-  &::before {
+  &::after {
     z-index: 11;
     content: "";
     border-right: 10px solid colors.$color-footer;
