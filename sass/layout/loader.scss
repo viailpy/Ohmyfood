@@ -3,7 +3,7 @@
 #loader {
   z-index:10;
   $animation-duration: 2s;
-  position: fixed;
+  position: absolute;
   display: grid;
   place-items: center;
   background-color: #ffffff;
