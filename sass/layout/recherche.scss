@@ -4,16 +4,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   background-color: colors.$color-recherche;
-  padding: 0.6rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  opacity: 0.8;
+  padding: 0.5rem 0 0.5rem 9rem;
+  @media (max-width:500px) {
+    padding: 0.5rem 0 0.5rem 15%;
+  }
+
   p {
-    padding: 1rem 0;
+    padding: 0.5rem 2rem;
   }
   i {
     font-size: 1.2rem;
   }
+}
+input {
+  font-weight: 600;
+  border: none;
+  font-size: 1.3rem;
+  background-color: colors.$color-recherche;
+  padding: 0.5rem;
 }

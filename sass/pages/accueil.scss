@@ -13,7 +13,7 @@ h2 {
 .menus {
   padding: 1rem 2rem 8rem;
   margin: 5rem 1rem;
-  max-width: 2000px;
+  max-width: 1600px;
   margin: auto;
   &__cards {
     display: grid;
@@ -79,7 +79,7 @@ h2 {
           opacity: 0.9;
           @media (max-width: 500px) {
             font-size: 1.1rem;
-           
+            
           }
         }
         /*coeur et animation*/
@@ -94,15 +94,16 @@ h2 {
             right: 1rem;
           }
         }
-
-        .fas {
-          background-clip: text;
-          -webkit-background-clip: text;
-          color: transparent;
-          background-image: linear-gradient(
-            to bottom,
-            colors.$main-color,
-            colors.$second-color
+        
+      }
+      .fas {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(
+          to bottom,
+          colors.$main-color,
+          colors.$second-color
           );
           opacity: 0;
           transition: opacity 300ms ease-in-out;
@@ -111,12 +112,11 @@ h2 {
           opacity: 1;
         }
       }
-    }
-    /*patch "nouveau"*/
-    .new {
-      position: relative;
-    }
-    .new::before {
+      /*patch "nouveau"*/
+      .new {
+        position: relative;
+      }
+      .new::before {
       content: "Nouveau";
       position: absolute;
       height: 2rem;

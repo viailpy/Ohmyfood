@@ -62,24 +62,24 @@
       place-items: center;
     }
   }
-/*coeur et animation*/
-  .fas {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(
-      to bottom,
-      colors.$main-color,
-      colors.$second-color
-    );
-    opacity: 0;
-    transition: opacity 300ms ease-in-out;
-
-    &:hover.fas {
-      opacity: 1;
-    }
-  }
 }
+/*coeur et animation
+.fas {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    colors.$main-color,
+    colors.$second-color
+  );
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+
+  &:hover.fas {
+    opacity: 1;
+  }
+}*/
 
 /*choix des plats*/
 .choise {

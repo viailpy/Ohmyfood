@@ -2,7 +2,7 @@
 @use "../utils/colors";
 /*bouton partie fonctionnement*/
 .fonction {
-  max-width: 2000px;
+  max-width: 1600px;
   margin: auto;
   padding: 1rem 0;
 
@@ -19,11 +19,11 @@
     gap: 2rem;
     @media (max-width: 1000px) {
       flex-direction: column;
+      max-width: 1200px;
     }
   }
   li {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
     position: relative;
@@ -33,9 +33,17 @@
     font-size: 1.2rem;
     list-style-type: none;
     background-color: colors.$backgroundgrey;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     flex-grow: 1;
     border-radius: 1rem;
+    @media (max-width:1000px){
+      padding:  1rem  0 1rem 30%;
+    }
+
+    @media (max-width:550px){
+      padding: 1rem;
+    }
+    
     @include mixins.base-shadow;
     &:hover {
       background: lighten($color: colors.$backgroundgrey, $amount: 100%);
@@ -43,6 +51,7 @@
 
       i.fa-solid {
         color: colors.$main-color;
+        
       }
     }
     /*pastille violette*/
@@ -63,9 +72,10 @@
     }
 
     i.fa-solid {
-      padding: 0.5rem;
+      padding: 0.5rem 2rem;
       color: grey;
       font-size: 1.5rem;
+
     }
   }
 }
