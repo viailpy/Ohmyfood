@@ -17,10 +17,14 @@
     display: flex;
     padding: 2rem;
     gap: 2rem;
-    @media (max-width: 1000px) {
+    @media (max-width: 1300px) {
       flex-direction: column;
-      max-width: 1200px;
+    
+
     }
+     
+
+    
   }
   li {
     display: flex;
@@ -33,11 +37,11 @@
     font-size: 1.2rem;
     list-style-type: none;
     background-color: colors.$backgroundgrey;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     flex-grow: 1;
     border-radius: 1rem;
     @media (max-width:1000px){
-      padding:  1rem  0 1rem 30%;
+      padding:  1rem  0 1rem 25%;
     }
 
     @media (max-width:550px){
