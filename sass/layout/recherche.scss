@@ -6,6 +6,7 @@
   justify-content: center;
   background-color: colors.$color-recherche;
   padding: 0.5rem 0 0.5rem 9rem;
+  color: black;
   @media (max-width:500px) {
     padding: 0.5rem 0 0.5rem 15%;
   }
@@ -23,4 +24,5 @@ input {
   font-size: 1.3rem;
   background-color: colors.$color-recherche;
   padding: 0.5rem;
+  color: black;
 }
