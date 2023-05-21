@@ -17,7 +17,7 @@
     display: flex;
     padding: 2rem;
     gap: 2rem;
-    @media (max-width: 1300px) {
+    @media (max-width: 1000px) {
       flex-direction: column;
     
 
@@ -35,7 +35,7 @@
     font-size: 1.2rem;
     list-style-type: none;
     background-color: colors.$backgroundgrey;
-    padding: 1rem 32% 1rem 36%;
+    padding: 1rem ;
     flex-grow: 1;
     border-radius: 1rem;
     @media (max-width:1000px){
