@@ -24,7 +24,7 @@ h2 {
       grid-template-columns: 1fr;
       gap: 4rem;
     }
-    @media (max-width:500px){
+    @media (max-width: 500px) {
       gap: 2rem;
     }
     /*animation hover card et eclaircissement*/
@@ -48,7 +48,7 @@ h2 {
         background-size: cover;
         height: 14rem;
         border-radius: 1rem 1rem 0 0;
-        @media (max-width:1000px){
+        @media (max-width: 1000px) {
           height: 10rem;
         }
       }
@@ -66,7 +66,7 @@ h2 {
       }
       &__description {
         position: relative;
-
+        
         h3 {
           padding: 0.7rem 1rem;
         }
@@ -77,13 +77,20 @@ h2 {
         p {
           font-size: 1.6rem;
           opacity: 0.9;
+          
           @media (max-width: 500px) {
             font-size: 1.1rem;
-            
           }
+
+          
         }
+        
         /*coeur et animation*/
-        i {
+        
+         i {
+          
+         cursor: default;
+         z-index: 4;
           position: absolute;
           right: 2rem;
           top: 50%;
@@ -94,9 +101,8 @@ h2 {
             right: 1rem;
           }
         }
-        
-      }
-      .fas {
+        }
+        .fas {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -109,26 +115,33 @@ h2 {
           transition: opacity 300ms ease-in-out;
         }
         .fa-heart:hover {
-          opacity: 1;
+        opacity: 1;
+        }
+        /*patch "nouveau"*/
+        .new {
+          position: relative;
+        }
+        .new::before {
+          content: "Nouveau";
+          position: absolute;
+          height: 2rem;
+          width: 6rem;
+          background-color: colors.$color-tertiary;
+          color: darken($color: colors.$color-tertiary, $amount: 40%);
+          font-weight: 500;
+          display: grid;
+          place-items: center;
+          right: 1rem;
+          top: 1rem;
+          border-radius: 2px;
         }
       }
-      /*patch "nouveau"*/
-      .new {
-        position: relative;
-      }
-      .new::before {
-      content: "Nouveau";
-      position: absolute;
-      height: 2rem;
-      width: 6rem;
-      background-color: colors.$color-tertiary;
-      color: darken($color: colors.$color-tertiary, $amount: 40%);
-      font-weight: 500;
-      display: grid;
-      place-items: center;
-      right: 1rem;
-      top: 1rem;
-      border-radius: 2px;
     }
   }
-}
+  
+
+
+
+
+  
+  
