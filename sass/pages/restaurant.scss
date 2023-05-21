@@ -33,15 +33,39 @@
 
   /*animation coeur*/
   i {
+    display: block;
+    z-index: 9;
+    cursor: default;
     position: absolute;
-    right: 5%;
+    right: 22%;
     top: 50%;
+    font-size: 1.7rem;
     transform: translateY(-50%);
-    font-size: 2rem;
-    @media (min-width: 1200px) {
-      right: 22%;
+    @media (max-width: 360px) {
+      font-size: 1.4rem;
+      right: 1rem;
+    }
+    @media (max-width:1200px){
+      right: 5%;
     }
   }
+  .fas {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+      to bottom,
+      colors.$main-color,
+      colors.$second-color
+    );
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  .fa-heart:hover {
+    opacity: 1;
+  }
+ 
+
   & h2 {
     font-family: "shrikhand", "sans-serif";
     padding: 1rem 2rem;
@@ -60,26 +84,29 @@
     @media (min-width: 1200px) {
       display: grid;
       place-items: center;
+      
+
+    }
+    & fas {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(
+        to bottom,
+        colors.$main-color,
+        colors.$second-color
+      );
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+
+      &:hover.fas {
+        opacity: 1;
+      }
     }
   }
 }
-/*coeur et animation
-.fas {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(
-    to bottom,
-    colors.$main-color,
-    colors.$second-color
-  );
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
 
-  &:hover.fas {
-    opacity: 1;
-  }
-}*/
+/*coeur et animation*/
 
 /*choix des plats*/
 .choise {

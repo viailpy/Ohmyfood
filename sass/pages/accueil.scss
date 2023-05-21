@@ -24,7 +24,7 @@ h2 {
       grid-template-columns: 1fr;
       gap: 4rem;
     }
-    @media (max-width:500px){
+    @media (max-width: 500px) {
       gap: 2rem;
     }
     /*animation hover card et eclaircissement*/
@@ -48,7 +48,7 @@ h2 {
         background-size: cover;
         height: 14rem;
         border-radius: 1rem 1rem 0 0;
-        @media (max-width:1000px){
+        @media (max-width: 1000px) {
           height: 10rem;
         }
       }
@@ -66,7 +66,7 @@ h2 {
       }
       &__description {
         position: relative;
-       
+        z-index: 4;
 
         h3 {
           padding: 0.7rem 1rem;
@@ -80,14 +80,13 @@ h2 {
           opacity: 0.9;
           @media (max-width: 500px) {
             font-size: 1.1rem;
-            
           }
         }
         /*coeur et animation*/
-        & i {
+        i {
           display: block;
           z-index: 9;
-          cursor: initial;
+          cursor: default;
           position: absolute;
           right: 2rem;
           top: 50%;
@@ -106,21 +105,21 @@ h2 {
             to bottom,
             colors.$main-color,
             colors.$second-color
-            );
-            opacity: 0;
-            transition: opacity 300ms ease-in-out;
-          }
-          .fa-heart:hover {
-            opacity: 1;
-          }
+          );
+          opacity: 0;
+          transition: opacity 300ms ease-in-out;
         }
-        
+        .fa-heart:hover {
+          opacity: 1;
+        }
       }
-      /*patch "nouveau"*/
-      .new {
-        position: relative;
-      }
-      .new::before {
+    }
+    /*patch "nouveau"*/
+    .new {
+      position: relative;
+    }
+    .new::before {
+      z-index: 2;
       content: "Nouveau";
       position: absolute;
       height: 2rem;
