@@ -19,10 +19,10 @@ h2 {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
-    gap: 8rem 4rem;
+    gap:2rem;
     @media (max-width: 1000px) {
       grid-template-columns: 1fr;
-      gap: 4rem;
+      
     }
     @media (max-width: 500px) {
       gap: 2rem;
